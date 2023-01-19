@@ -19,6 +19,11 @@ def import_data(path):
     It then uses the opendatasets function to download the file into the local folder before then using 
     the get_folder_name function to get the name of the newly created folder, next it uses glob to extract the
     file name and finally the data is imported as a pandas dataframe which is returned to the user
+
+    Parameters:
+            path (str)- file path being read in
+    Returns:
+            data (pandas.Dataframe)- pandas dataframe of the data that was read in
     '''
     if not isinstance(path, str): # input must be a string
         return print("Invalid input, file path must be a string")
@@ -57,9 +62,13 @@ def import_data(path):
 
 def get_folder_name(path):
     '''
-    Function which takes a string and finds all the text after the last backslash, this is the name of the folder created
+    Function which takes a string and finds all the text after the last forwardslash, this is the name of the folder created
     when data is imported from kaggle
 
+    Parameters:
+            path (str)- file path to find the folder name from
+    Returns:
+            folder (str)- the name of the folder
     '''
     folder = path.split("/")[-1] # folder name will be after the last forwardslash
     return folder
@@ -69,6 +78,12 @@ def clean_col_names(df,new_col_names):
     '''
     Function which takes a dataframe, and a list of new column names to assign to it and changes all the column names. The dataframe must be a valid dataframe and columns must be a list
     where each item in the list is a string and the length of the list must be the same as the number of columns
+
+    Parameters:
+            df (pandas.Dataframe)- pandas dataframe you want to change the column names of
+            new_col_names (list(str))- list of strings which represent the new column names for the dataframe
+    Returns:
+            renamed_df (pandas.Dataframe)- pandas dataframe with the renamed columns
     '''
     if not isinstance(df, pd.DataFrame): # must be a valid dataframe
         print("Invalid dataframe input, this is not a pandas dataframe")
@@ -94,6 +109,10 @@ def create_boxenplots(data, col_names):
     must be int or float
 
     If all conditions are met then a boxenplot with a stripplot to add details is created for each column and added as a subplot to a main plot
+
+    Parameters:
+            data (pandas.Dataframe)- pandas dataframe you want to create charts with
+            col_names (list(str))- list of strings representing the columns you want to create boxenplots for
     '''
 
     if not isinstance(data, pd.DataFrame): # must be a valid dataframe
@@ -129,6 +148,10 @@ def create_count_plots(data,col_names):
     must be string
 
     If all conditons are met then a countplot is created for each column and added as a subplot to a main plot
+
+    Parameters:
+            data (pandas.Dataframe)- pandas dataframe you want to create charts with
+            col_names (list(str))- list of strings representing the columns you want to create count plots for
     '''
     if not isinstance(data, pd.DataFrame): # must be a valid dataframe
         print("Invalid dataframe input, this is not a pandas dataframe")
@@ -160,6 +183,13 @@ def create_scatter_plots(data,value_1, value_2, hue_value):
     must be int or float while the value of the third must be a string
 
     If all conditons are met then a scatterplot is created for the given columns
+
+    Parameters:
+            data (pandas.Dataframe)- pandas dataframe you want to create charts with
+            value_1 (str)- string representing the name of the column you want to use for the x axis
+            value_2 (str)- string representing the name of the column you want to use for the y axis
+            hue_value (str)- string representing the name of the column you want to use as the hue (colour of the dots)
+    
     '''
     if not isinstance(data, pd.DataFrame): # must be a valid dataframe
         print("Invalid dataframe input, this is not a pandas dataframe")
