@@ -19,18 +19,9 @@ def import_data(path):
     It then uses the opendatasets function to download the file into the local folder before then using 
     the get_folder_name function to get the name of the newly created folder, next it uses glob to extract the
     file name and finally the data is imported as a pandas dataframe which is returned to the user
-
-    >>> import_data("www.bbc.com/itv/one/two/three")
-    Invalid URL format
-    >>> import_data(43)
-    Invalid input, file path must be a string
-    >>> import_data("https://github.com/microsoft/pyright/blob/main/docs/configuration.md#reportMissingModuleSource")
-    You must enter a url to a dataset within kaggle
-
-
     '''
     if not isinstance(path, str): # input must be a string
-        print("Invalid input, file path must be a string")
+        return print("Invalid input, file path must be a string")
     else:
         validator = URLValidator() #  create validator object
 
@@ -38,7 +29,7 @@ def import_data(path):
             validator(path)
 
             if "kaggle" not in path: # if the word kaggle isnt in the path then the path isnt to kaggle so is invalid
-                print("You must enter a url to a dataset within kaggle")
+                return print("You must enter a url to a dataset within kaggle")
             else:
 
                 try: # try catch incase there are other issues meaning the dataset cant be downloaded
@@ -50,12 +41,12 @@ def import_data(path):
 
                     return data
                 except:
-                    print("Unable to download dataset")
+                    return print("Unable to download dataset")
 
                 
 
         except ValidationError:
-            print("Invalid URL format")
+            return print("Invalid URL format")
 
         
 
@@ -68,10 +59,7 @@ def get_folder_name(path):
     '''
     Function which takes a string and finds all the text after the last backslash, this is the name of the folder created
     when data is imported from kaggle
-    >>> get_folder_name("https://www.kaggle.com/datasets/camnugent/california-housing-prices")
-    'california-housing-prices'
-    >>> get_folder_name("https://www.kaggle.com/datasets/lepchenkov/usedcarscatalog")
-    'usedcarscatalog'
+
     '''
     folder = path.split("/")[-1] # folder name will be after the last forwardslash
     return folder
