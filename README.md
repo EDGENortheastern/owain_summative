@@ -8,7 +8,9 @@ The project is designed in python using a python file to store the functions and
 
 #### Workplace use case 
 
-The dataset being analysed by the project contains data on the Uk mortgage market, information obtained from this data source could be used for research within my workplace or the data source itself could be used within dashboards or machine learning models, with the analysis of the dataset in this project revealing how it should be used. The functions are designed so that they can handle different data sets and so future use cases of this project could be that it acts as a pipeline for obtaining and then analysing any data set on the Kaggle website 
+The dataset being analysed by the project contains data on the Uk mortgage market, information obtained from this data source could be used for research within my workplace or the data source itself could be used within dashboards or machine learning models, with the analysis of the dataset in this project revealing how it should be used. The functions are designed so that they can handle different data sets and so future use cases of this project could be that it acts as a pipeline for obtaining and then analysing any data set on the Kaggle website.
+
+The dataset used in this project can be found here https://www.kaggle.com/datasets/thedevastator/uk-mortgage-rates-thousands-of-mortgage-products
 
 ### Designing the charts 
 
