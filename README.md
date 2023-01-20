@@ -10,7 +10,7 @@ The project is designed in python using a python file to store the functions and
 
 The dataset being analysed by the project contains data on the Uk mortgage market, information obtained from this data source could be used for research within my workplace or the data source itself could be used within dashboards or machine learning models, with the analysis of the dataset in this project revealing how it should be used. The functions are designed so that they can handle different data sets and so future use cases of this project could be that it acts as a pipeline for obtaining and then analysing any data set on the Kaggle website.
 
-The dataset used in this project can be found here https://www.kaggle.com/datasets/thedevastator/uk-mortgage-rates-thousands-of-mortgage-products
+The dataset used in this project can be found here [Uk mortgage rates kaggle page](https://www.kaggle.com/datasets/thedevastator/uk-mortgage-rates-thousands-of-mortgage-products)
 
 ### Designing the charts 
 
@@ -82,19 +82,21 @@ The project has 6 different functions, descriptions of what each of them does ca
 
 To run the code, you must first ensure that all the required libraries are installed, the libraries used in this project are listed below. 
 
-* pandas - data manipulation library, which allows you to use data structures such as data frames. Documentation found here: https://pandas.pydata.org/docs/ 
+* pandas - data manipulation library, which allows you to use data structures such as data frames. Documentation found here: [pandas documentation](https://pandas.pydata.org/docs/) 
 
-* opendatasets - designed to download online sources from Kaggle and google drive. Documentation found here: https://pypi.org/project/opendatasets/ 
+* opendatasets - designed to download online sources from Kaggle and google drive. Documentation found here: [opendatasets documentation](https://pypi.org/project/opendatasets/)
 
-* glob - used for obtaining filenames from a folder. Documentation found here: https://docs.python.org/3/library/glob.html 
+* glob - used for obtaining filenames from a folder. Documentation found here: [glob documentation](https://docs.python.org/3/library/glob.html) 
 
-* django - library designed to enable you to build websites with python, in this project it is used for validating that URL's are valid. Documentation found here: https://docs.djangoproject.com/en/4.1/ 
+* django - library designed to enable you to build websites with python, in this project it is used for validating that URL's are valid. Documentation found here: [django documentation](https://docs.djangoproject.com/en/4.1/)
 
-* matplotlib - library designed for creating visualizations in python. Documentation found here: https://matplotlib.org/stable/index.html 
+* matplotlib - library designed for creating visualizations in python. Documentation found here: [matplotlib documentation](https://matplotlib.org/stable/index.html) 
 
-* seaborn - library designed for enhancing matplotlib visualisations. Documentation found here: https://seaborn.pydata.org/tutorial.html 
+* seaborn - library designed for enhancing matplotlib visualisations. Documentation found here: [seaborn documentation](https://seaborn.pydata.org/tutorial.html) 
 
-* numpy - mathematical library which offers a number of mathematical functions as well as data structures such as matrices and arrays. Documentation found here: https://numpy.org/doc/stable/ 
+* numpy - mathematical library which offers a number of mathematical functions as well as data structures such as matrices and arrays. Documentation found here: [numpy documentation](https://numpy.org/doc/stable/)
+
+* pytest - testing library for python, providing the ability to unit test functions. Documentation found here: [pytest documentation](https://docs.pytest.org/en/7.1.x/contents.html)
 
 ##### Running the notebook 
 
@@ -120,7 +122,7 @@ The unit tests were designed alongside the actual functions so that it was confi
 
 #### A/B testing 
 
-In order to get the appearance of the charts correct a/b testing was used to get input from potential end users on what the charts should look like, this feedback was used to determine the final design. This research was carried out through the google form linked here: https://forms.gle/tDtXaTMRjfCnCkdp9 
+In order to get the appearance of the charts correct a/b testing was used to get input from potential end users on what the charts should look like, this feedback was used to determine the final design. This research was carried out through the google form linked here: [A/B testing google docs form](https://forms.gle/tDtXaTMRjfCnCkdp9)
 
 The form was designed to get input on areas such as: should the count plot be sorted; and should it have different colour bars. The feedback obtained from the survey gave an insight into how the charts should be designed in order to offer the most impact to the end users. 
 
