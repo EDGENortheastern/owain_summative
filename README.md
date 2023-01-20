@@ -21,9 +21,13 @@ Initially the data included on the charts was unknown as the data hadnt yet been
 
 In order to ensure the project was kept on track and all tasks were completed, a ticketing system was used to create items on a kanban board, which is a project management tool designed to make it easier to track tasks by visually representing them on a board. The tasks can be moved across different sections as they are completed and even ranked in order of priority so that the key parts of a project in terms of impact are given the most time and man power. In the below images my kanban board can be seen in a couple of stages as the project developed.
 
+#### First kanban board
+This shows the kanban board during one of the first sprints, here the only tasks that had been completed where the creation of the readme file and the initial prototype.
 ![Image of kanban board 1](https://github.com/EDGENortheastern/owain_summative/blob/11844f0dc2d99c93e27d6465dc387b098bf0bed2/Kanban%20image%201.jpg)
 
-
+#### Second kanban board
+This shows the kanban board at a later stage during a different sprint when all the functions were being tested.
+![Image of kanban board 2](https://github.com/EDGENortheastern/owain_summative/blob/a36e7345c74a29011aee2d83a8ad37ade114a617/Kanban%20image%202.jpg)
 
 Each item on the kanban board is a ticket which was rasied and represents a task that needs to be completed, they are given names, descriptions and labels to identofy what kind of task it is, meaning that different people within the project team can identify the tickets the need to work on more easily, this is also made easier by the fact that tickets can be assigned to individual or groups of people. The kanban board has 4 sections so that its easy to tack not only what the tasks are but also what stage of completion they are in. 
 
@@ -37,6 +41,8 @@ The project management method used to develop the project was agile project mana
 
 #### Making the code user friendly
 In order to make the code easy to understand and run comments were used throughout to explain what parts of the code were doing, the syntax of the code was kept consitent with varaibles given sensible descriptive names and finally doc strings were used to describe what each of the functions do, what their parameters are and what they return, this both makes the code easier to read but it also gives the user a way of finding out what a function does through the use of the help function, this can be seen in the image below.
+
+![Image of help function being demonstrated](https://github.com/EDGENortheastern/owain_summative/blob/a36e7345c74a29011aee2d83a8ad37ade114a617/Example%20of%20help%20function.jpg)
 
 
 #### Functions
@@ -53,5 +59,34 @@ The project has 6 different functions.
 * create_count_plots - This function takes a dataframe and given list of columns and will create a plot containing a number of subplots whereby each subplot is a countplot, the counts within the plot are ranked so that the value that appears most is at the top of the chart. The columns must be valid column names of the dataframe and also must be strings as this chart isn't designed for int or float values. Finally, the chart is displayed to the user. 
 
 * create_scatter_plots - This function takes a dataframe and three strings, the strings represent column names of the dataframe. The first two columns are the x and y axis and so must be numeric values, while the third is the hue of the chart, or colour of the dots, and so the data in this column must be a string. If all the conditions are met then a scatterplot is created with the data and its displayed to the user.
+
+#### How to run the code
+
+##### Packages
+To run the code you must first ensure that all the required libraries are installed, the libraries used in this project are listed below.
+
+* pandas - data manipulation library, which allows you to use data structures such as dataframes. Documentation found here: https://pandas.pydata.org/docs/
+
+* opendatasets - designed to download online sources from kaggle and google drive. Documentation found here: https://pypi.org/project/opendatasets/
+
+* glob - used for obtaining filenames from a folder. Documentation found here: https://docs.python.org/3/library/glob.html
+
+* django - library designed to enable you to build websites with python, in this project is is used for validating that url's are valid. Documentation found here: https://docs.djangoproject.com/en/4.1/
+
+* matplotlib - library designed for creating visualizations in python. Documentation found here: https://matplotlib.org/stable/index.html
+
+* seaborn - library designed for enhancing matplotlib vizualisations. Documentation found here: https://seaborn.pydata.org/tutorial.html
+
+* numpy - mathematical library which offers a number of mathematical functions as well as data structures such as matricies and arrays. Documentation found here: https://numpy.org/doc/stable/
+
+##### Running the notebook
+If all the packages are installed then the notebook can be run, it's designed so that the only required user inputs should be the username and key for the users kaggle account, if these are entered correctly then the rest of the notebook will run, displaying the charts to the user.
+
+The functions are designed to be able to handle other datasets and also be able to create different charts based on what is input into them, so the notebook can be customised to display differnt datasets from kaggle and also show different charts too.
+
+### Testing
+
+#### Unit testing
+In order to test the different functions the pytest package was used, this allows each individual function to be tested to make sure it outputs the required results and also doesnt allow invalid inputs
 
 
