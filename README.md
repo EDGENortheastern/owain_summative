@@ -56,7 +56,7 @@ The project management method used to develop the project was agile project mana
 
 In order to make the code easy to understand and run, comments were used throughout to explain what sections of the code were doing, the syntax of the code was kept consistent with variables given sensible descriptive names, and snake case used throughout. Finally, doc strings were used to describe what each of the functions do, what their parameters are and what they return, this makes the code easier to read, and also gives the user a way of finding out what a function does through the use of the help function, this can be seen in the image below. 
 
-![Image of help function being demonstrated] (https://github.com/EDGENortheastern/owain_summative/blob/a36e7345c74a29011aee2d83a8ad37ade114a617/Example%20of%20help%20function.jpg) 
+![Image of help function being demonstrated](https://github.com/EDGENortheastern/owain_summative/blob/a36e7345c74a29011aee2d83a8ad37ade114a617/Example%20of%20help%20function.jpg) 
 
 #### Functions 
 
@@ -107,6 +107,8 @@ The functions are designed to be able to handle other datasets and also be able 
 In order to test the different functions, the pytest package was used, this allows each individual function to be tested to make sure it outputs the required results and also doesn't allow invalid inputs 
 
 All the tests are contained in the test_summative_functions.py file and they can be run on the command line; the below image shows the output of the tests being run on the command line confirming they all passed. 
+
+![Image of pytest being run](https://github.com/EDGENortheastern/owain_summative/blob/805260cd49aff8b842e3d65829cdbe913b56ca7e/Example%20of%20pytest%20being%20run.jpg) 
 
 Within the test file two fixtures were created, these are then used as inputs for some of the tests so that the same objects don't have to be created for each test, the first of these creates a data frame and the second is a list of valid column names 
 
