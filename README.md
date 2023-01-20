@@ -6,6 +6,10 @@ The project imports a dataset from kaggle, cleanses it using a number of functio
 
 The project is designed in python using both a python file to store the functions and a jupyter notebook to display all the data, in addition there is a python file used for testing the functions.
 
+#### Workplace use case
+
+The dataset being analysed by the project contains data on the uk mortgage market, information obtained from this datasource could be used for research wihtin my workplace or the data source itself could be used within dashboards or machine learning models. The functions are designed so that they can handle different data sets and so future use cases of this project could be that it acts as a pipeline for obtaining and then anaysing any data set on the kaggle website
+
 ### Designing the charts
 
 Figma was used to create a prototype of the notebook, to give an idea of how the notebook would be layed out and make creating the charts easier, this initial prototype was a wireframe and  can be seen below:
@@ -18,6 +22,8 @@ Initially the data included on the charts was unknown as the data hadnt yet been
 
 
 ### Project management
+
+Github was used as the primary project management tool for this project as not only did it allow for the changes to the code to be properly tracked through version control, but it also has other useful features such as a ticketing system, kanban board and the ability to create the readme file to document the project.
 
 In order to ensure the project was kept on track and all tasks were completed, a ticketing system was used to create items on a kanban board, which is a project management tool designed to make it easier to track tasks by visually representing them on a board. The tasks can be moved across different sections as they are completed and even ranked in order of priority so that the key parts of a project in terms of impact are given the most time and man power. In the below images my kanban board can be seen in a couple of stages as the project developed.
 
@@ -102,6 +108,13 @@ In order to get the appearance of the charts correct a/b testing was used to get
 
 The form was designed to get input on areas such as should the count plot be sorted and should it have different colour bars, and the feddback obtained from the survey gave an insight into how the charts should be designed in order to offer the most impact to the end users.
 
+### Evaluation
 
+Overall the project was a success as the final notebook works and looks as intended, as its able to read in data from kaggle and create a number of charts based on that data. In addition, the code is designed so that different data sources could be used and different columns within those data sources analysed, meaning that this project acts as a potential pipeline for analysing and creating charts on any data source on the kaggle website, this ability could be further adabpted to enable different kinds of charts such as time series or pie chart to be developed. 
 
+The project management of the task also worked well. An agile approach meant that testing and devleopment of the code went hand in hand and therefore the unit tests developed were able to remove any issues and bugs before they could impact other functions, the ticketing system ensured that all tasks were completed in time and that no areas were neglected and finally the use of github meant that it was easy to track the different versions of the project and in some cases go back to previous versions if issues were discovered.
+
+Finally, the code was well documented and tested meaning that issues were removed and that it's easy to understand what the different parts are doing, so if other people were to take over the project after its completion they should be able to understand what each functions purpose is.
+
+The are a couple of areas where the project could be improved or enhanced, firstly a different visuallisation library such as plotly could be used to make the charts interactive, this may be useful for finding out more about the data and so improve the overall effectiveness of the project. Next, the ability to read in data could be extended beyond just kaggle, which would allow for a wider range of data to be analysed. And finally, the project could be moved to a web app through a pacvkage such as dash, this would likely make it more accessible to a wider range of users than a jupyter notebook as it would require any knowledge of python.
 
