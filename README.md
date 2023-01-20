@@ -10,16 +10,19 @@ The project is designed in python using both a python file to store the function
 
 Figma was used to create a prototype of the notebook, to give an idea of how the notebook would be layed out and make creating the charts easier, this initial prototype was a wireframe and  can be seen below:
 
-![Alt text](https://github.com/EDGENortheastern/owain_summative/blob/e91f25ff9e220dc7190a7ba37ad145b23ccf43fd/Wire%20frame%20-%20summative%201%20assignment.png)
+![Image of Figma prototype 1](https://github.com/EDGENortheastern/owain_summative/blob/e91f25ff9e220dc7190a7ba37ad145b23ccf43fd/Wire%20frame%20-%20summative%201%20assignment.png)
 
 Initially the data included on the charts was unknown as the data hadnt yet been analysed, but by creating an early prototype of what charts should be included it gave an early structure to the final product as well as a structure for which charts I should be aiming to make when looking at how the columns correlate to each other. After the analysis of the data was done a second protoype, also created in figma, was produced. The second version included what each chart would be showing and added some extra context to the various frames, this added detail should make the creation of the charts much easier. In addition the contents of the readme cells was added and some extra aspects such as cleaning the data and also the exact type of charts as for example the box plot was turned into a boxenplot with  a striplot overlayed.
 
-![Alt text](https://github.com/EDGENortheastern/owain_summative/blob/b1cb2a9f3b09a596aedd1378b3906843f599b995/Wire%20frame%20-%20summative%201%20assignment%20(Copy).png)
+![Image of Figma prototype 2](https://github.com/EDGENortheastern/owain_summative/blob/b1cb2a9f3b09a596aedd1378b3906843f599b995/Wire%20frame%20-%20summative%201%20assignment%20(Copy).png)
 
 
 ### Project management
 
 In order to ensure the project was kept on track and all tasks were completed, a ticketing system was used to create items on a kanban board, which is a project management tool designed to make it easier to track tasks by visually representing them on a board. The tasks can be moved across different sections as they are completed and even ranked in order of priority so that the key parts of a project in terms of impact are given the most time and man power. In the below images my kanban board can be seen in a couple of stages as the project developed.
+
+![Image of kanban board 1](https://github.com/EDGENortheastern/owain_summative/blob/11844f0dc2d99c93e27d6465dc387b098bf0bed2/Kanban%20image%201.jpg)
+
 
 
 Each item on the kanban board is a ticket which was rasied and represents a task that needs to be completed, they are given names, descriptions and labels to identofy what kind of task it is, meaning that different people within the project team can identify the tickets the need to work on more easily, this is also made easier by the fact that tickets can be assigned to individual or groups of people. The kanban board has 4 sections so that its easy to tack not only what the tasks are but also what stage of completion they are in. 
