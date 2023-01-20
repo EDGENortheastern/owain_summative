@@ -12,7 +12,7 @@ Figma was used to create a prototype of the notebook, to give an idea of how the
 
 ![Image of Figma prototype 1](https://github.com/EDGENortheastern/owain_summative/blob/e91f25ff9e220dc7190a7ba37ad145b23ccf43fd/Wire%20frame%20-%20summative%201%20assignment.png)
 
-Initially the data included on the charts was unknown as the data hadnt yet been analysed, but by creating an early prototype of what charts should be included it gave an early structure to the final product as well as a structure for which charts I should be aiming to make when looking at how the columns correlate to each other. After the analysis of the data was done a second protoype, also created in figma, was produced. The second version included what each chart would be showing and added some extra context to the various frames, this added detail should make the creation of the charts much easier. In addition the contents of the readme cells was added and some extra aspects such as cleaning the data and also the exact type of charts as for example the box plot was turned into a boxenplot with  a striplot overlayed.
+Initially the data included on the charts was unknown as the data hadnt yet been analysed, but by creating an early prototype of what charts should be included it gave an early structure to the final product as well as a structure for which charts I should be aiming to make when looking at how the columns correlate to each other. After the analysis of the data was done a second protoype, also created in figma, was produced. The second version included what each chart would be showing and added some extra context to the various frames, this added detail should make the creation of the charts much easier. In addition the contents of the readme cells was added and some extra aspects such as cleaning the data and also the exact type of charts as for example the box plot was turned into a boxenplot with  a striplot overlayed. Finally, the analysis of the data revealed that it wouldnt be possible to do a time series with the avaiable data and so that section was removed.
 
 ![Image of Figma prototype 2](https://github.com/EDGENortheastern/owain_summative/blob/b1cb2a9f3b09a596aedd1378b3906843f599b995/Wire%20frame%20-%20summative%201%20assignment%20(Copy).png)
 
@@ -88,5 +88,20 @@ The functions are designed to be able to handle other datasets and also be able 
 
 #### Unit testing
 In order to test the different functions the pytest package was used, this allows each individual function to be tested to make sure it outputs the required results and also doesnt allow invalid inputs
+
+All the tests are contained in the test_summative_functions.py file and they can be run on the command line, the below image shows the output of the tests being run on the command line confirming they all passed.
+
+Within the test file two fixtures were created, these are then used as inputs for some of the tests so that the same objects dont have to be created for each test, the first of these creates a dataframe and the second is a list of valid column names
+
+Most of the tests are designed to ensure that if invalid data is input to the functions that nothing is returned, when the actual functions are run an error message is printed to the user but no object should actually be returned, there are also tests to check the logic is correct for when the inputs are valid as although you can't test whether a chart is correct you can test to check that if valid inputs were used that a chart would be created. 
+
+The unit tests were designed alongside the actual functions so that it was confirmed that each function worked and so wouldn't cause any issues with other functions.
+
+#### A/B testing
+In order to get the appearance of the charts correct a/b testing was used to get input from potential end users on what the charts should look like, this feedback was used to determine the final design. This research was carried out through the google form linked here: https://forms.gle/tDtXaTMRjfCnCkdp9
+
+The form was designed to get input on areas such as should the count plot be sorted and should it have different colour bars, and the feddback obtained from the survey gave an insight into how the charts should be designed in order to offer the most impact to the end users.
+
+
 
 
